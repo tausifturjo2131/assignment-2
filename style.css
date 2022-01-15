@@ -1,6 +1,7 @@
 html{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -8,7 +9,7 @@ body{
     background-color: white;
     margin: 0px;
     padding: 0px;
-
+    overflow-x: hidden;
 }
 header, section.first, section.second, hr{
     margin-top: 50px;
@@ -172,6 +173,7 @@ footer{
     text-align: center;
     color: white;
     margin: 0px;
+    padding-bottom: 20px;
     
 }
 footer h2{
@@ -210,4 +212,34 @@ footer li>a{
     padding: 5px;
     align-items: center;
 
+}
+/* for mobile */
+@media (max-width:420px) {
+    .menu{
+        display: none;
+    }
+    .first{
+        flex-direction: column-reverse;
+    }
+    .left-part{
+        width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
+    .main-heading{
+        font-size: 40px;
+    }
+    .right-part{
+        margin-right: 0;
+    }
+    .right-part p{
+        margin-bottom: 10px;
+        
+    }
+    hr{
+        display: none;
+    }
+    section.second{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
