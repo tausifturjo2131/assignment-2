@@ -215,22 +215,37 @@ footer li>a{
 }
 /* for mobile */
 @media (max-width:420px) {
-    .menu{
+    header{
+        margin-left: 5px;
+        margin-right: 5px;
+        justify-content: space-between;
+    }
+    .first-heading{
+        font-size: 0.80em;
+    }
+    .menu>ul>li{
         display: none;
+    }
+    #cart{
+        display: flex;
+        font-size: 20px;
+        
     }
     .first{
         flex-direction: column-reverse;
+        
     }
     .left-part{
         width: 100%;
         white-space: normal;
-        text-align: center;
+        height: 100%;
     }
     .main-heading{
         font-size: 40px;
     }
     .right-part{
         margin-right: 0;
+        margin-bottom: 50px;
     }
     .right-part p{
         margin-bottom: 10px;
