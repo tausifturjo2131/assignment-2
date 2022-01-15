@@ -274,8 +274,12 @@ footer li>a{
     .first{
         justify-content: space-between;
         white-space: normal;
-        align-items: center;  
-        margin-bottom: 200px;  
+        align-items: center;    
+    }
+    .left-part{
+        width: 100%;
+        white-space: normal;
+        height: 100%;
     }
     .first-heading{
         font-size: 0.80em;
